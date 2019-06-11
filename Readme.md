@@ -1,6 +1,6 @@
 聚合sdk打包
 -----------
-这是一个nodejs通用的聚合sdk打包工具.<br/>
+这是一个nodejs electron通用的聚合sdk打包工具.<br/>
 
 实现原理：<br/>
 
