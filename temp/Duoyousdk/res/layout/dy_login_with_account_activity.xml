@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/login_layout" android:background="@drawable/dy_white_c_15_bg" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:orientation="vertical" android:background="@drawable/dy_dialog_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dy_game_sdk_logo" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingTop="7.0dip" android:paddingRight="20.0dip" android:paddingBottom="16.699982dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="46.0dip">
+                <ImageView android:id="@id/account_iv" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/dy_login_account_normal" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:id="@id/username_et" android:background="@android:color/transparent" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="60.0dip" android:hint="用户名/手机号" android:singleLine="true" android:layout_toRightOf="@id/account_iv" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/clear_username_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/dy_input_del_icon" />
+                    <View android:layout_gravity="center_vertical" android:id="@id/vertical_line" android:background="#ffebebeb" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="25.0dip" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow_down_iv" android:padding="15.0dip" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/dy_login_arrow_down" />
+                </LinearLayout>
+                <View android:id="@id/account_bottom_line" android:background="@color/dy_theme_line_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="46.0dip">
+                <ImageView android:id="@id/pwd_iv" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/dy_lock_icon_normal" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:id="@id/password_et" android:background="@android:color/transparent" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="90.0dip" android:hint="请输入密码" android:singleLine="true" android:layout_toRightOf="@id/pwd_iv" android:layout_centerVertical="true" android:inputType="textPassword" />
+                <ImageView android:id="@id/clear_password_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="78.0dip" android:src="@drawable/dy_input_del_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/dy_theme_blue" android:gravity="center" android:id="@id/forget_password_tv" android:background="@drawable/dy_blue_c_14_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="找回密码" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <View android:id="@id/pwd_bottom_line" android:background="@color/dy_theme_line_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/play_game_tv" android:background="@drawable/dy_blue_btn_floating_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="进入游戏" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/dy_login_checkbox_nor" />
+                <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="参加用户体验改进计划 | 阅读产品许可协议" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/dy_theme_grey_dark" android:gravity="center" android:id="@id/phone_login_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号登录" android:drawableLeft="@drawable/dy_login_tel_icon" android:drawablePadding="5.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/dy_theme_grey_dark" android:gravity="center" android:id="@id/quick_register_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快速注册" android:drawableLeft="@drawable/dy_quick_register_icon" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@id/list_view" android:background="@android:color/white" android:visibility="visible" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="97.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" android:layout_alignTop="@id/login_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

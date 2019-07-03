@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dy_white_c_15_bg" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/dy_theme_black" android:gravity="center" android:id="@id/message_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="80.0dip" android:text="你确定要删除账号" />
+        <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/dy_theme_grey_dark" android:gravity="center" android:id="@id/cancel_tv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+            <View android:background="#ffdddddd" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/dy_theme_grey_dark" android:gravity="center" android:id="@id/ok_tv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="确定" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

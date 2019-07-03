@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/login_layout" android:background="@drawable/dy_white_c_15_bg" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:orientation="vertical" android:background="@drawable/dy_dialog_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改密码" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/close_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/dy_dialog_close_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/old_pwd_layout" android:background="@drawable/dy_grey_edt_border_nor" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/dy_theme_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="旧密码：" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/dy_theme_black" android:id="@id/old_password_et" android:background="@android:color/transparent" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="55.0dip" android:layout_marginRight="20.0dip" android:hint="请输入旧密码" android:singleLine="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/clear_old_pwd_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/dy_input_del_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/new_pwd_layout_1" android:background="@drawable/dy_grey_edt_border_nor" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/dy_theme_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新密码：" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/dy_theme_black" android:id="@id/new_password_et_1" android:background="@android:color/transparent" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="55.0dip" android:layout_marginRight="20.0dip" android:hint="请输入新密" android:singleLine="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/clear_new_password_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/dy_input_del_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/new_pwd_layout_2" android:background="@drawable/dy_grey_edt_border_nor" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/dy_theme_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新密码：" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:textColor="@color/dy_theme_black" android:id="@id/new_password_et_2" android:background="@android:color/transparent" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="55.0dip" android:layout_marginRight="20.0dip" android:hint="请输入新密" android:singleLine="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/clear_new_password_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/dy_input_del_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/commit_tv" android:background="@drawable/dy_blue_btn_floating_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="确认" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

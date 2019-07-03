@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/dy_white_c_15_bg" android:padding="12.0dip" android:layout_width="320.0dip" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/avatar_layout" android:layout_width="50.0dip" android:layout_height="50.0dip">
+            <ProgressBar android:id="@id/progressBar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:indeterminateDrawable="@drawable/dy_login_auto_progessbar_bg" android:indeterminateDuration="500" android:interpolator="@android:anim/accelerate_decelerate_interpolator" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small" />
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/dy_default_avatar" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/avatar_layout" android:layout_centerVertical="true">
+            <TextView android:textSize="13.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:id="@id/welcome_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="欢迎你，13026360033" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/loading_message_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="正在登陆，请稍后......" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/dy_theme_blue" android:gravity="center" android:id="@id/switch_tv" android:background="@drawable/dy_blue_c_15_border" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="切换账号" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

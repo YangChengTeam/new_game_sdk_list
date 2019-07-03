@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dy_white_c_15_bg" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/dy_dialog_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号登录" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="无须注册" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingTop="7.0dip" android:paddingRight="20.0dip" android:paddingBottom="16.699982dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <ImageView android:id="@id/account_iv" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/dy_register_tel_nor" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:id="@id/telephone_et" android:background="@android:color/transparent" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="26.0dip" android:layout_marginRight="60.0dip" android:hint="手机号" android:singleLine="true" android:maxLength="11" android:layout_centerVertical="true" android:inputType="phone" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/clear_telephone_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dy_input_del_icon" />
+                    <View android:layout_gravity="center_vertical" android:id="@id/vertical_line" android:background="#ffebebeb" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow_down_iv" android:padding="15.0dip" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/dy_login_arrow_down" />
+                </LinearLayout>
+                <View android:id="@id/account_bottom_line" android:background="@color/dy_theme_line_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <ImageView android:id="@id/pwd_iv" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/dy_verify_code_icon_nor" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:id="@id/verify_code_et" android:background="@android:color/transparent" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="26.0dip" android:layout_marginRight="50.0dip" android:hint="短信验证码" android:singleLine="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/clear_verify_code_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="85.0dip" android:src="@drawable/dy_input_del_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/dy_theme_blue" android:gravity="center" android:id="@id/get_tel_verify_code_tv" android:background="@drawable/dy_blue_c_14_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="获取验证码" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/time_count_tv" android:background="@drawable/dy_grey_c_10_bg" android:visibility="gone" android:layout_width="55.0dip" android:layout_height="26.0dip" android:layout_marginRight="15.0dip" android:text="120" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:id="@id/pwd_bottom_line" android:background="@color/dy_theme_line_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/quick_play_game_layout" android:background="@drawable/dy_blue_c_20_border" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/dy_theme_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快速游戏" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/dy_theme_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="设置登录密码" />
+                </LinearLayout>
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/play_game_tv" android:background="@drawable/dy_blue_c_20_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:text="进入游戏" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <CheckBox android:id="@id/agreen_protrocal_ck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/dy_protocol_checkbox" android:layout_centerVertical="true" />
+                <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:id="@id/protocal_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="阅读并同意《多游平台用户服务协议》" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/dy_theme_blue" android:id="@id/password_login_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账号密码登录>" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/dy_theme_blue" android:id="@id/quick_register_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快速注册 >" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@id/list_view" android:background="@android:color/white" android:visibility="gone" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="95.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" android:layout_alignTop="@id/login_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>
