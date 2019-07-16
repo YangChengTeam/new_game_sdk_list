@@ -1,0 +1,234 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: assets/plugins/toutiao.apk
+SHA1-Digest: mhjntUuOWZKeTyK1e/cf5vNXPTU=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/pre-applypatch.sample
+SHA1-Digest: 8ggofBqSUl3p9UYukFqdMd4eLXU=
+
+Name: com/feiyou/groupsdk/core/.git/objects/b4/521b1518fd5068fde3d7bc0
+ 204eba390b00113
+SHA1-Digest: jP3XUANpp6mxCW2c4cVHx+Zu33c=
+
+Name: assets/plugins/images/ic_com_game91_sdk_update_dialog_top.png
+SHA1-Digest: AGbLWFOIPiUp3b55V7EUr1oxQHY=
+
+Name: com/feiyou/groupsdk/core/.git/objects/ed/64f1cd2faee25be5e247c3c
+ 732eb970f2fa15e
+SHA1-Digest: PUYtQ51Ki1jnZiKpDzesfAn2bOU=
+
+Name: res/drawable-hdpi-v4/alipay_normal_icon.png
+SHA1-Digest: BiIg30WrirmigGOd7rwV4zNw5sA=
+
+Name: res/drawable/pay_coin_way_selector.xml
+SHA1-Digest: B/WpsrCR9WARNh/rPleVnk8gatM=
+
+Name: res/drawable-mdpi-v4/ic_launcher.png
+SHA1-Digest: RRxOSvpmhVfCwiprVV/wZlaqQpw=
+
+Name: com/feiyou/groupsdk/core/.git/COMMIT_EDITMSG
+SHA1-Digest: GfPQBrzTSiswJeBwYS1xqlXAZOQ=
+
+Name: res/drawable/common_bottom_bg.xml
+SHA1-Digest: /E0xOfms8MvVFryZylxuFVE8fqc=
+
+Name: com/feiyou/groupsdk/core/.git/objects/ff/bfee8796a9dd1e2cc4be3c6
+ ee8b20da017ffe1
+SHA1-Digest: XmyL/FQ7w3pYBEXjLND71FY9Tew=
+
+Name: com/feiyou/groupsdk/core/.git/logs/refs/heads/master
+SHA1-Digest: TydaWq301QyJu8jpMAyNBwYGryI=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/pre-commit.sample
+SHA1-Digest: Nq7Yl23MCLUHaETw7GRbGLw3dY8=
+
+Name: com/feiyou/groupsdk/core/.git/objects/f1/7d79a868a73816a3146e9a7
+ fc7b53ebb2bce5a
+SHA1-Digest: WWq8pFpqcEF98o9F5wv9HzPT9WI=
+
+Name: res/drawable-xhdpi-v4/coupon_count_icon.png
+SHA1-Digest: Nje1BcGoFS3uKq9yrSrOpxO0RyU=
+
+Name: assets/plugins/support.apk
+SHA1-Digest: RPNqLOHExHOU3gd64GTkch8j4Sk=
+
+Name: res/drawable-hdpi-v4/alipay_selected_icon.png
+SHA1-Digest: 7ZrXD3kTAY80n71hRXPnrrAwN54=
+
+Name: assets/plugins/game91.apk
+SHA1-Digest: 67Ip/CYeh0osZGmo8ogF3bWNjPY=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/commit-msg.sample
+SHA1-Digest: 7h7VqtmKQ18gILbeNcFzt12a/6w=
+
+Name: com/feiyou/groupsdk/core/.git/objects/be/3ec30ed6f85330923f890c7
+ 9a034c374bf0168
+SHA1-Digest: joo0eBPxeW/aFaagVCyUVjcXLP8=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/update.sample
+SHA1-Digest: 5ynNYbJ8EolR0Tnejnxj0aN1jd4=
+
+Name: com/feiyou/groupsdk/core/.git/objects/0e/94177dee0cdeedb5c812c3a
+ e87cd357cdd55a4
+SHA1-Digest: Vgrp6duOU48v/cGrLYsUWip8OlM=
+
+Name: com/feiyou/groupsdk/core/.git/objects/32/53e726c8d9b7a3130241e6e
+ 7098691cc19b978
+SHA1-Digest: Onc5AvEmk34S0mki6hLEpYb3TqI=
+
+Name: res/drawable/common_title_bg.xml
+SHA1-Digest: Lef7zDSpKXGareZYAK32Lcr8cYg=
+
+Name: com/feiyou/groupsdk/core/.git/objects/b0/7de0e2799381cade67013b9
+ 95f71f20983768d
+SHA1-Digest: 7vN6HJ+vhpIuq+qTdX5efku1n7g=
+
+Name: com/feiyou/groupsdk/core/.git/info/exclude
+SHA1-Digest: yHnfAV2XYVBQr6e5ZB4zUqHnAaw=
+
+Name: com/feiyou/groupsdk/core/.git/objects/d7/9615270de9a97fd9801ad49
+ 5c46d2d46b90207
+SHA1-Digest: oG4i2mf/ur1EfpGpPIem2wPe2vk=
+
+Name: res/drawable-xhdpi-v4/ic_launcher.png
+SHA1-Digest: AfPh3OJoypH966MludSW6f1RHg4=
+
+Name: assets/plugins/images/ic_com_game91_sdk_update_dialog_top_por.pn
+ g
+SHA1-Digest: ZmBpr/6hiAyviPDfQEeXa3E11r0=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/prepare-commit-msg.sample
+SHA1-Digest: K2J17aNlytUNFn/jo4fJvJ/t1U8=
+
+Name: res/drawable-hdpi-v4/pay_way_unselected.png
+SHA1-Digest: /SOyl7K5w9HtGV6jHUQP6WhmIKE=
+
+Name: res/drawable-hdpi-v4/wxpay_normal_icon.png
+SHA1-Digest: qsGd1gUr5knj06igF8nverCw7L0=
+
+Name: res/drawable/common_bg.xml
+SHA1-Digest: PqEstm4piu+Td2NekLmUBfscs9g=
+
+Name: assets/plugins/crash.apk
+SHA1-Digest: jKr8hIyx8edAEX0C521wetIpXFU=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/pre-push.sample
+SHA1-Digest: XIUYv9HR09LBpxlJlMChbYoxOkE=
+
+Name: res/drawable/common_input_bg.xml
+SHA1-Digest: 7dPYtI3Yy1JeumDxHHIN2Hn+E90=
+
+Name: res/drawable/vip_item_time_selector.xml
+SHA1-Digest: QQgYZQa5DahgfckrsNVMu1NPfA0=
+
+Name: resources.arsc
+SHA1-Digest: PakT5a1QY0n0vBDM/xFSnQuSIHQ=
+
+Name: assets/plugins/images/ic_com_game91_sdk_update_dialog_top_lan.pn
+ g
+SHA1-Digest: R9SkXnhksXXXKUsg8OcFV7t22rg=
+
+Name: assets/plugins/reyun.apk
+SHA1-Digest: drqR9SBo6lB8iqTmadBH1muhgrc=
+
+Name: AndroidManifest.xml
+SHA1-Digest: h4K9Ha9iJwzEFEOMC5tZn5jbRtQ=
+
+Name: res/drawable/pay_bg.xml
+SHA1-Digest: r4n+a0lKpwcWzkjm/xdo+b71wIU=
+
+Name: res/drawable-hdpi-v4/ic_launcher.png
+SHA1-Digest: Nq8q3HeTluE5JNCBpVvNy3BXtJI=
+
+Name: res/drawable-hdpi-v4/close_pay_icon.png
+SHA1-Digest: /EqzloLxfoV2KUtu+KdlXC5q5fI=
+
+Name: res/layout-v17/activity_main.xml
+SHA1-Digest: kQgl1tTWnnyup7S2YWrARiOdhBw=
+
+Name: com/feiyou/groupsdk/core/.git/refs/remotes/origin/master
+SHA1-Digest: hI3erQMDEeYwR8qB7eEMJw0JdE0=
+
+Name: res/drawable/pay_result_money_bg.xml
+SHA1-Digest: xtcMfOYEaO7MLNLlBOyxif1Fxrc=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/pre-receive.sample
+SHA1-Digest: cFoX0lnniW8Agv4unywMOxJ75aw=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/post-update.sample
+SHA1-Digest: thTC9j2n3Knx2y563mHvMESPyWw=
+
+Name: com/feiyou/groupsdk/core/.git/logs/refs/remotes/origin/master
+SHA1-Digest: DCkdyEEMJ8hSGmy0cgmhJ+Vx4xk=
+
+Name: res/drawable/bg_loading_shape.xml
+SHA1-Digest: ekNm73Hdz0BmiqPvIbK06Wmrk0U=
+
+Name: com/feiyou/groupsdk/core/.git/index
+SHA1-Digest: DmWWq6q6ljsAaWxegLLphLm0wg4=
+
+Name: com/feiyou/groupsdk/core/.git/objects/75/13fdf915be2c08809926023
+ 8b1208c827a9118
+SHA1-Digest: 3FrTpkxQzn7+ybAR4fzOFCQxpeM=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/pre-rebase.sample
+SHA1-Digest: WIWlarT8qAdaBaVi0AXpIs3phTs=
+
+Name: res/drawable/vip_item_unselect_time.xml
+SHA1-Digest: FKpZnZ1uXVBD01MnFk1ACFllcvw=
+
+Name: com/feiyou/groupsdk/core/.git/config
+SHA1-Digest: 6kEf07Bi0pZ7UmLLu/mB7Np/W2c=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: DFIovBXTcWHZeqt9q8VHRX3fClU=
+
+Name: res/drawable-hdpi-v4/wxpay_selected_icon.png
+SHA1-Digest: 9U9MUuBc+VKMV7pmekrJme4/xJU=
+
+Name: lib/armeabi-v7a/libgame91-hack.so
+SHA1-Digest: 1WndRCqLzvp9IF9bNoXRGtzuysE=
+
+Name: assets/plugins/images/ic_com_game91_sdk_update_dialog_close.png
+SHA1-Digest: fXu9eakGu/jSNJE7dufoWaMcgSU=
+
+Name: com/feiyou/groupsdk/core/.git/HEAD
+SHA1-Digest: rLrvJ15Gp/FMHvRW//LIu+jIRyQ=
+
+Name: com/feiyou/groupsdk/core/.git/logs/HEAD
+SHA1-Digest: TydaWq301QyJu8jpMAyNBwYGryI=
+
+Name: res/drawable/alipay_selector.xml
+SHA1-Digest: ysr4j+KF16CzSBW9ET+FIUAf7wE=
+
+Name: assets/plugins/images/ic_com_game91_sdk_splash_image_white.png
+SHA1-Digest: jjJ7xKf5Wd/+Lrdf94MUByFeYZY=
+
+Name: res/drawable/btn_bg.xml
+SHA1-Digest: VxKvcugH4M/w7ztwDDnlt56txoY=
+
+Name: res/drawable-hdpi-v4/pay_way_selected.png
+SHA1-Digest: 743EDhFyvwlhxxmbCWvvaco3KzU=
+
+Name: com/feiyou/groupsdk/core/.git/description
+SHA1-Digest: ljXxt+EsBFISgZ3ZNNgJ7wfvovQ=
+
+Name: res/drawable/wxpay_selector.xml
+SHA1-Digest: smLE6fcEzHsn8tdlhY9QSQSqhOA=
+
+Name: res/drawable/vip_item_select_time.xml
+SHA1-Digest: NOZptfRTtFn5xXaJObaTN9P4Duc=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/applypatch-msg.sample
+SHA1-Digest: TeiOuVpek/0n54tfs7UjGo2JF90=
+
+Name: classes.dex
+SHA1-Digest: KXNE0BUAtuIa25a6FrG4ECrwl/I=
+
+Name: res/drawable-hdpi-v4/loading.png
+SHA1-Digest: F3MeK9T5/UrUrwGOLZdsLIK0Qxg=
+
+Name: com/feiyou/groupsdk/core/.git/refs/heads/master
+SHA1-Digest: hI3erQMDEeYwR8qB7eEMJw0JdE0=
+

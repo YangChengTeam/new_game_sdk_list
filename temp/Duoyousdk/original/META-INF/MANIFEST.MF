@@ -1,0 +1,507 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: com/feiyou/groupsdk/core/.git/hooks/pre-applypatch.sample
+SHA1-Digest: 8ggofBqSUl3p9UYukFqdMd4eLXU=
+
+Name: res/layout-v21/dy_pay_activity.xml
+SHA1-Digest: foPZf1ScCU8VzRmFHi094zW3YD8=
+
+Name: com/feiyou/groupsdk/core/.git/objects/b4/521b1518fd5068fde3d7bc0
+ 204eba390b00113
+SHA1-Digest: jP3XUANpp6mxCW2c4cVHx+Zu33c=
+
+Name: assets/plugins/images/ic_com_game91_sdk_update_dialog_top.png
+SHA1-Digest: AGbLWFOIPiUp3b55V7EUr1oxQHY=
+
+Name: com/feiyou/groupsdk/core/.git/objects/ed/64f1cd2faee25be5e247c3c
+ 732eb970f2fa15e
+SHA1-Digest: PUYtQ51Ki1jnZiKpDzesfAn2bOU=
+
+Name: res/drawable-xxhdpi-v4/dy_login_arrow_down.png
+SHA1-Digest: pW+VXZpxu1q1+Tu7gkkAzPOLX2c=
+
+Name: res/drawable/common_bottom_bg.xml
+SHA1-Digest: /E0xOfms8MvVFryZylxuFVE8fqc=
+
+Name: res/layout/dy_register_phone_activity.xml
+SHA1-Digest: pPHyy51spkSBWWVOxtgKMyzxDH8=
+
+Name: com/feiyou/groupsdk/core/.git/logs/refs/heads/master
+SHA1-Digest: TydaWq301QyJu8jpMAyNBwYGryI=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/pre-commit.sample
+SHA1-Digest: Nq7Yl23MCLUHaETw7GRbGLw3dY8=
+
+Name: res/drawable/dy_pay_item_selected.xml
+SHA1-Digest: 5MpD1HNJ+1TADrsIyBXOJhsVbNM=
+
+Name: res/layout/dy_floating_webview_dialog.xml
+SHA1-Digest: tOmQn4yXPg0KxMYJbKirGN2iyYE=
+
+Name: res/drawable-xhdpi-v4/coupon_count_icon.png
+SHA1-Digest: Nje1BcGoFS3uKq9yrSrOpxO0RyU=
+
+Name: assets/plugins/support.apk
+SHA1-Digest: RPNqLOHExHOU3gd64GTkch8j4Sk=
+
+Name: res/drawable-xxhdpi-v4/dy_blue_close_icon.png
+SHA1-Digest: qkbASnw0lokeqf30a8M7OlopPoM=
+
+Name: res/layout/dy_floating_order_list_layout.xml
+SHA1-Digest: DSz5EdvK/HqsAW0Dl+EEyIy5iwY=
+
+Name: res/drawable-xxhdpi-v4/dy_dialog_back_icon.png
+SHA1-Digest: 7tYABzQKcDXDL8CK22bZgAzN9AI=
+
+Name: res/layout/dy_floating_order_item_seletion.xml
+SHA1-Digest: fMmlXSOOC2I2ch0u1RX7w7p8wDw=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/commit-msg.sample
+SHA1-Digest: 7h7VqtmKQ18gILbeNcFzt12a/6w=
+
+Name: res/drawable-xxhdpi-v4/dy_login_account_normal.png
+SHA1-Digest: Hm2n6ohiqFZdQ795hPvt0Ou3nBU=
+
+Name: res/layout/dy_floating_order_detail_layout.xml
+SHA1-Digest: uctYY6KMdzr7qKayTfcDMjIAz08=
+
+Name: com/feiyou/groupsdk/core/.git/objects/32/53e726c8d9b7a3130241e6e
+ 7098691cc19b978
+SHA1-Digest: Onc5AvEmk34S0mki6hLEpYb3TqI=
+
+Name: res/drawable/common_title_bg.xml
+SHA1-Digest: Lef7zDSpKXGareZYAK32Lcr8cYg=
+
+Name: res/drawable-xxhdpi-v4/dy_empty_icon.png
+SHA1-Digest: Jpy7phCqDNMiKJDvunH2YFdpC3s=
+
+Name: res/drawable-xxhdpi-v4/dy_pay_wechat_icon.png
+SHA1-Digest: ebP59jXkqDsoTas7IG6Ssvpy4QQ=
+
+Name: com/feiyou/groupsdk/core/.git/info/exclude
+SHA1-Digest: yHnfAV2XYVBQr6e5ZB4zUqHnAaw=
+
+Name: com/feiyou/groupsdk/core/.git/objects/d7/9615270de9a97fd9801ad49
+ 5c46d2d46b90207
+SHA1-Digest: oG4i2mf/ur1EfpGpPIem2wPe2vk=
+
+Name: res/drawable-xxhdpi-v4/dy_floating_user_logo.png
+SHA1-Digest: mO4D+a2Kw7/2uHxY2sb6SeLufn4=
+
+Name: res/layout/dy_floating_bind_tel_layout.xml
+SHA1-Digest: jQAz9+2+ytoDgEFx7Uret+Jgt7A=
+
+Name: assets/plugins/images/ic_com_game91_sdk_update_dialog_top_por.pn
+ g
+SHA1-Digest: ZmBpr/6hiAyviPDfQEeXa3E11r0=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/prepare-commit-msg.sample
+SHA1-Digest: K2J17aNlytUNFn/jo4fJvJ/t1U8=
+
+Name: res/layout/dy_pay_activity_new.xml
+SHA1-Digest: vwWCAnda8132Tdkzpo/2A6fs+ts=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/pre-push.sample
+SHA1-Digest: XIUYv9HR09LBpxlJlMChbYoxOkE=
+
+Name: res/drawable-xxhdpi-v4/dy_wechat_icon.png
+SHA1-Digest: wHzSSoi0O+Rox1V0QSaS+zsK+j4=
+
+Name: res/drawable/common_input_bg.xml
+SHA1-Digest: 7dPYtI3Yy1JeumDxHHIN2Hn+E90=
+
+Name: resources.arsc
+SHA1-Digest: FpvKeq9WM7Z7jMYiechUNDyoTQk=
+
+Name: assets/plugins/images/ic_com_game91_sdk_update_dialog_top_lan.pn
+ g
+SHA1-Digest: R9SkXnhksXXXKUsg8OcFV7t22rg=
+
+Name: res/drawable-xxhdpi-v4/dy_floating_order_icon.png
+SHA1-Digest: dF4EW1NsJOWqV2yveIRl4u90emU=
+
+Name: res/drawable-xxhdpi-v4/dy_protocal_nor.png
+SHA1-Digest: nrD2NHIGiGg2ywKRrXm4gx09c9c=
+
+Name: res/drawable/dy_blue_c_20_border.xml
+SHA1-Digest: y4hGTYpaU/Ollcjj/udpt6nKn5U=
+
+Name: AndroidManifest.xml
+SHA1-Digest: T7VhSqiQ4SBza4pOrxSi6yFeJEc=
+
+Name: res/drawable-xxhdpi-v4/dy_loading.png
+SHA1-Digest: ktvs8WY11nuX5R0zqJGtrr8Lb8A=
+
+Name: res/drawable-xxhdpi-v4/dy_register_tips_icon.png
+SHA1-Digest: Y9OxSSPdSZgffbW3M8KqCBMQ9lA=
+
+Name: res/drawable-xxhdpi-v4/dy_register_eye_close_icon.png
+SHA1-Digest: p4lyOPBGl+y5L6ZfVejYJDf5PwY=
+
+Name: res/drawable/dy_login_auto_progessbar_bg.xml
+SHA1-Digest: GkHYmkeNRci97dGt6pV2z1Rs9Rk=
+
+Name: res/drawable-xxhdpi-v4/dy_blue_btn_floating_bg.png
+SHA1-Digest: EzHKu7xtFJdOvcLHYiZOPfoV57Y=
+
+Name: res/layout/dy_pay_activity.xml
+SHA1-Digest: jhspe2qsHLpxSgbvFElD0qUgFlM=
+
+Name: res/drawable-xxhdpi-v4/dy_lock_select_icon.png
+SHA1-Digest: oJtIqAbIPhJQQ71x66ZDtciiCYE=
+
+Name: res/layout-v17/activity_main.xml
+SHA1-Digest: Mrpx8Chv12gudFt4c7+bCurSl8Y=
+
+Name: res/drawable-xxhdpi-v4/dy_other_pay_icon.png
+SHA1-Digest: eUZiZ0efibvl01GXs96CxXBzuc8=
+
+Name: res/drawable-xxhdpi-v4/dy_alipay_icon.png
+SHA1-Digest: EoQfNQZPCf45A4s51gv6mR/X0ig=
+
+Name: res/drawable-xxhdpi-v4/dy_verify_code_icon_nor.png
+SHA1-Digest: L+yJ8zTRC7OBfmIZTsJoJX2Feo4=
+
+Name: res/layout/dy_login_recent_accounts_item.xml
+SHA1-Digest: 9ycD64COz2BdVoMbigl7GwohzXo=
+
+Name: res/drawable-xxhdpi-v4/dy_pay_alipay_icon.png
+SHA1-Digest: iQcASFeWZ5S0AHRnmCMoZbOsIzE=
+
+Name: res/layout/dy_floating_msg_item.xml
+SHA1-Digest: g4lTo3GU8VlRk6eDaEUG/2hBlTk=
+
+Name: res/drawable-xxhdpi-v4/dy_float_icon.png
+SHA1-Digest: uX5z/wrd1LLxkqPf2ntVPgRrEFA=
+
+Name: res/drawable-xxhdpi-v4/dy_dialog_title_bg.png
+SHA1-Digest: nJdvqV/7/3rY8nlUTPMdyPjHlhE=
+
+Name: res/layout/dy_floating_order_item.xml
+SHA1-Digest: G6cgfW2M+B8KP95SSVBAxNq65r4=
+
+Name: com/feiyou/groupsdk/core/.git/index
+SHA1-Digest: DmWWq6q6ljsAaWxegLLphLm0wg4=
+
+Name: com/feiyou/groupsdk/core/.git/objects/75/13fdf915be2c08809926023
+ 8b1208c827a9118
+SHA1-Digest: 3FrTpkxQzn7+ybAR4fzOFCQxpeM=
+
+Name: res/drawable-xxhdpi-v4/dy_floting_kefu_icon.png
+SHA1-Digest: CBTfwhy0ChUyuQlx5saprHnM9Ao=
+
+Name: res/layout/dy_login_with_account_activity.xml
+SHA1-Digest: 8+geiYr/A57QzqNCNkwsMaydUbs=
+
+Name: res/layout/dy_webview_activity.xml
+SHA1-Digest: BKoledMDy6D5qS/pQiq7RTvVXo8=
+
+Name: res/drawable/dy_blue_c_15_border.xml
+SHA1-Digest: y4hGTYpaU/Ollcjj/udpt6nKn5U=
+
+Name: res/layout/dy_common_two_btn_dialog.xml
+SHA1-Digest: lL783efn3Er0zeN4pk572STYPO0=
+
+Name: res/layout/dy_floating_info_activity.xml
+SHA1-Digest: E8EXBOE6RZFeA7wEPmgQjyM9wJI=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: q0SPPx0HKAZy0cvKwZ9X1gr8fLI=
+
+Name: res/drawable-xxhdpi-v4/dy_register_eye_open_icon.png
+SHA1-Digest: tYqa4zH+LTAe4ad8XlxCRmjuUS8=
+
+Name: com/feiyou/groupsdk/core/.git/HEAD
+SHA1-Digest: rLrvJ15Gp/FMHvRW//LIu+jIRyQ=
+
+Name: res/drawable/dy_divider.xml
+SHA1-Digest: SDCflXLfnX2c7Q+XNoYabPEDGxA=
+
+Name: res/layout/dy_xlistview_footer.xml
+SHA1-Digest: YyRwqPlbUkqHiB+sDFiwSo4t7IY=
+
+Name: com/feiyou/groupsdk/core/.git/description
+SHA1-Digest: ljXxt+EsBFISgZ3ZNNgJ7wfvovQ=
+
+Name: res/drawable-xxhdpi-v4/dy_pay_close_icon.png
+SHA1-Digest: UeARNoya9TRrPpXeOpBR9M8+gog=
+
+Name: res/drawable/vip_item_select_time.xml
+SHA1-Digest: NOZptfRTtFn5xXaJObaTN9P4Duc=
+
+Name: res/layout/dy_loaing_progress_bar_layout.xml
+SHA1-Digest: 57BF2JldM+OBLWRhq3KgO+88FHI=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/applypatch-msg.sample
+SHA1-Digest: TeiOuVpek/0n54tfs7UjGo2JF90=
+
+Name: res/drawable/dy_white_c_6_bg.xml
+SHA1-Digest: jxJTyTSFy1sBgafedVx5wO49hJ4=
+
+Name: res/drawable-xxhdpi-v4/dy_login_tel_icon.png
+SHA1-Digest: rirmDxfrzkfdd/E8IDbGjVqL5pE=
+
+Name: assets/plugins/toutiao.apk
+SHA1-Digest: mhjntUuOWZKeTyK1e/cf5vNXPTU=
+
+Name: res/drawable-xxhdpi-v4/dy_floating_title_bg.png
+SHA1-Digest: GqQRAEd5P6Z8mEASCAXK5f5IMu8=
+
+Name: res/drawable-xxhdpi-v4/dy_login_checkbox_sel.png
+SHA1-Digest: 2+fqaKNMLOT3Sn5ZlLiSxqORM9U=
+
+Name: res/drawable/dy_grey_edt_border_nor.xml
+SHA1-Digest: 0Px3G0dbrLw/YqqLVgzy0gNgxOQ=
+
+Name: res/drawable-xxhdpi-v4/dy_login_arrow_up_icon.png
+SHA1-Digest: FhPUwtNEzoEVcCYg181OI6lp+Os=
+
+Name: res/drawable-xxhdpi-v4/dy_register_tel_sel.png
+SHA1-Digest: /76UQ4RG6a4kgc2AY4XYHIL0OSk=
+
+Name: res/layout/dy_login_auto_layout.xml
+SHA1-Digest: nKRuAR9uoFb3h0daMcnc18skM1c=
+
+Name: res/drawable-xxhdpi-v4/dy_dialog_close_icon.png
+SHA1-Digest: msStIWfGksbZ1YxvCvJ/WvbXPQk=
+
+Name: res/drawable-mdpi-v4/ic_launcher.png
+SHA1-Digest: RRxOSvpmhVfCwiprVV/wZlaqQpw=
+
+Name: com/feiyou/groupsdk/core/.git/COMMIT_EDITMSG
+SHA1-Digest: GfPQBrzTSiswJeBwYS1xqlXAZOQ=
+
+Name: res/drawable-xxhdpi-v4/dy_float_share.png
+SHA1-Digest: Pv0pCyyNgH7ehpj/iqCMgMbJAIQ=
+
+Name: res/drawable/dy_protocol_checkbox.xml
+SHA1-Digest: Ym0RR1NVHQakzmOUqd/ARZgKR5s=
+
+Name: res/drawable-xxhdpi-v4/dy_login_checkbox_nor.png
+SHA1-Digest: kUtmC9S5dOwLCCU0av6MT2BAhdY=
+
+Name: res/drawable-xxhdpi-v4/dy_login_account_sel.png
+SHA1-Digest: Hseu5KqF7qvNIIFKYw2PujB/av4=
+
+Name: com/feiyou/groupsdk/core/.git/objects/ff/bfee8796a9dd1e2cc4be3c6
+ ee8b20da017ffe1
+SHA1-Digest: XmyL/FQ7w3pYBEXjLND71FY9Tew=
+
+Name: res/drawable-xxhdpi-v4/dy_floating_message_icon.png
+SHA1-Digest: uj0xNcVX7KIDr80ssfwdE4rupq0=
+
+Name: res/anim/dy_slide_out_bottom.xml
+SHA1-Digest: mQl3Mi9Ex3G517KkN4yeoDGCMwg=
+
+Name: res/layout/dy_xlistview_header.xml
+SHA1-Digest: uue5m76nMHDPksjr89UHqkAjsg4=
+
+Name: res/drawable-xxhdpi-v4/dy_ic_pulltorefresh_arrow.png
+SHA1-Digest: Nm5tImh7rG/ON7Xxtvyz7u4HqPE=
+
+Name: com/feiyou/groupsdk/core/.git/objects/f1/7d79a868a73816a3146e9a7
+ fc7b53ebb2bce5a
+SHA1-Digest: WWq8pFpqcEF98o9F5wv9HzPT9WI=
+
+Name: res/drawable/dy_pay_checkbox_selector.xml
+SHA1-Digest: FiNe3mH8QXaqafM/Lft/dGvswUk=
+
+Name: res/drawable-xxhdpi-v4/dy_register_tel_nor.png
+SHA1-Digest: 1AHjpB+THcgSDi1i0zUVaCTIqQk=
+
+Name: res/drawable/dy_blue_c_20_bg.xml
+SHA1-Digest: UrdwdXSctARCIRpqDsSizjPd7M8=
+
+Name: assets/plugins/game91.apk
+SHA1-Digest: 67Ip/CYeh0osZGmo8ogF3bWNjPY=
+
+Name: res/drawable-xxhdpi-v4/dy_lock_icon_normal.png
+SHA1-Digest: xX0CpN/EIBk4VItnQveqWQGUU3o=
+
+Name: com/feiyou/groupsdk/core/.git/objects/be/3ec30ed6f85330923f890c7
+ 9a034c374bf0168
+SHA1-Digest: joo0eBPxeW/aFaagVCyUVjcXLP8=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/update.sample
+SHA1-Digest: 5ynNYbJ8EolR0Tnejnxj0aN1jd4=
+
+Name: com/feiyou/groupsdk/core/.git/objects/0e/94177dee0cdeedb5c812c3a
+ e87cd357cdd55a4
+SHA1-Digest: Vgrp6duOU48v/cGrLYsUWip8OlM=
+
+Name: res/layout/dy_floating_icon_layout.xml
+SHA1-Digest: Cwt49MZtupHJBvbnBcpREAa8VF4=
+
+Name: res/drawable/dy_white_c_15_border.xml
+SHA1-Digest: c3CJazXFcG8q6jGO0BawQ1rgtuI=
+
+Name: res/layout/dy_login_forget_pwd_layout.xml
+SHA1-Digest: XIawpY05oRAf4G2l/h2rBgiUMNY=
+
+Name: com/feiyou/groupsdk/core/.git/objects/b0/7de0e2799381cade67013b9
+ 95f71f20983768d
+SHA1-Digest: 7vN6HJ+vhpIuq+qTdX5efku1n7g=
+
+Name: res/drawable/dy_white_shadow.xml
+SHA1-Digest: 3lWqF1m9dTT74BydljPJN4szsOY=
+
+Name: res/drawable-xxhdpi-v4/dy_floating_scurit_icon.png
+SHA1-Digest: X2J/cHKZegcQHYpW1G7MYFT/vyg=
+
+Name: res/drawable-xhdpi-v4/ic_launcher.png
+SHA1-Digest: AfPh3OJoypH966MludSW6f1RHg4=
+
+Name: res/drawable-xxhdpi-v4/dy_pay_checkbox_sel.png
+SHA1-Digest: H1ysCqRRQEW4xSfHag5AT41ers8=
+
+Name: res/drawable-xxhdpi-v4/dy_default_avatar.png
+SHA1-Digest: Z94leRxELe4EYJvLOOa7pc5vBSU=
+
+Name: res/layout/dy_login_auto_success_layout.xml
+SHA1-Digest: VjVfojJGPHq0RWludDUCYxjI6vg=
+
+Name: res/drawable-xxhdpi-v4/dy_login_auto_loading_bg.png
+SHA1-Digest: uEAinu7A6J9uJIguIGeWYcV+GSA=
+
+Name: res/drawable/common_bg.xml
+SHA1-Digest: PqEstm4piu+Td2NekLmUBfscs9g=
+
+Name: res/layout/dy_floating_certification_layout.xml
+SHA1-Digest: XOlyTvcDmx8esFY3zNQJapuP1KQ=
+
+Name: res/drawable/dy_grey_edt_border_sel.xml
+SHA1-Digest: NE/D/AgVgCZGjhxKsJDbxVmWmOI=
+
+Name: assets/plugins/crash.apk
+SHA1-Digest: jKr8hIyx8edAEX0C521wetIpXFU=
+
+Name: res/drawable/vip_item_time_selector.xml
+SHA1-Digest: vXWajrBQip3xFqjjL26pV3OuRMI=
+
+Name: res/drawable-xxhdpi-v4/dy_floating_lock_icon.png
+SHA1-Digest: 7EF8IpnDadU+jizak3n331bes5k=
+
+Name: assets/plugins/reyun.apk
+SHA1-Digest: drqR9SBo6lB8iqTmadBH1muhgrc=
+
+Name: res/drawable/dy_grey_c_10_bg.xml
+SHA1-Digest: 5lGliz5O7vmjspLhHCAnTA9bYdI=
+
+Name: res/drawable-xxhdpi-v4/dy_game_sdk_logo.png
+SHA1-Digest: peGLNhHi5YLyB9MaSH0X3cAwiss=
+
+Name: res/layout/dy_register_quick_activity.xml
+SHA1-Digest: 2NxKReTlwntZrNYS2bYMq9971DY=
+
+Name: res/layout/dy_login_recent_accounts_layout.xml
+SHA1-Digest: Xz9lklxZ843AWwQtU0twEgh4cXE=
+
+Name: res/drawable/dy_red_c_4_circle_bg.xml
+SHA1-Digest: KZ8Jh6YFgowIzXUHruA4vh7idvk=
+
+Name: res/drawable/pay_bg.xml
+SHA1-Digest: r4n+a0lKpwcWzkjm/xdo+b71wIU=
+
+Name: res/layout/dy_empty_layout.xml
+SHA1-Digest: YJQb3EYOMklDjLxqhwR7KJQNTaQ=
+
+Name: res/drawable-xxhdpi-v4/dy_floating_tel_icon.png
+SHA1-Digest: NiAggB/jwXp2j1xSspHJT8JTYn0=
+
+Name: res/anim/dy_slide_in_bottom.xml
+SHA1-Digest: jZ2npJNz4+chthvw4BQVrO/Dp3w=
+
+Name: res/layout/dy_floating_ubbind_tel_layout.xml
+SHA1-Digest: in9FCYgfTqhGBrOIcw6mM8t9vXw=
+
+Name: res/drawable/dy_white_c_6_bottom_bg.xml
+SHA1-Digest: N8AVH33NlTq5xcO/JqMW6Ghlip0=
+
+Name: com/feiyou/groupsdk/core/.git/refs/remotes/origin/master
+SHA1-Digest: hI3erQMDEeYwR8qB7eEMJw0JdE0=
+
+Name: res/layout/dy_floating_msg_list_layout.xml
+SHA1-Digest: GCHE97Y9oArWO2nH2XUKaVqUUtQ=
+
+Name: res/drawable-xxhdpi-v4/dy_login_virify_code_icon.png
+SHA1-Digest: +nkWbKYsXJ6f+P43EwfAN3/HwLo=
+
+Name: res/drawable/pay_result_money_bg.xml
+SHA1-Digest: xtcMfOYEaO7MLNLlBOyxif1Fxrc=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/pre-receive.sample
+SHA1-Digest: cFoX0lnniW8Agv4unywMOxJ75aw=
+
+Name: res/drawable-xxhdpi-v4/dy_verify_code_sel.png
+SHA1-Digest: DpzIjcy1qvGGXpW3DtcSx5/BEwk=
+
+Name: res/drawable/dy_recent_account_bg.xml
+SHA1-Digest: 0NjT3kaKnY/Z7cD9Xxu9WXl9Uns=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/post-update.sample
+SHA1-Digest: thTC9j2n3Knx2y563mHvMESPyWw=
+
+Name: com/feiyou/groupsdk/core/.git/logs/refs/remotes/origin/master
+SHA1-Digest: DCkdyEEMJ8hSGmy0cgmhJ+Vx4xk=
+
+Name: res/drawable-xxhdpi-v4/dy_protocal_sel.png
+SHA1-Digest: WVP/EBVc+7pLUV+EnIU7Qyg21SA=
+
+Name: res/drawable/bg_loading_shape.xml
+SHA1-Digest: ekNm73Hdz0BmiqPvIbK06Wmrk0U=
+
+Name: res/drawable/dy_blue_c_14_bg.xml
+SHA1-Digest: xYmF1kFfUHKxdc68HmuEKHFi2ts=
+
+Name: com/feiyou/groupsdk/core/.git/hooks/pre-rebase.sample
+SHA1-Digest: WIWlarT8qAdaBaVi0AXpIs3phTs=
+
+Name: res/layout/dy_floating_modify_pwd_activity.xml
+SHA1-Digest: JD3tA/vLo113dEyyc93XS51yE5Q=
+
+Name: res/drawable/vip_item_unselect_time.xml
+SHA1-Digest: FKpZnZ1uXVBD01MnFk1ACFllcvw=
+
+Name: res/drawable-xxhdpi-v4/dy_quick_register_icon.png
+SHA1-Digest: FskuSFDn3RcuaPI5PYuWK3MGm0E=
+
+Name: com/feiyou/groupsdk/core/.git/config
+SHA1-Digest: 6kEf07Bi0pZ7UmLLu/mB7Np/W2c=
+
+Name: res/drawable-xxhdpi-v4/dy_input_del_icon.png
+SHA1-Digest: 1Z55he2h0LsgkyDYupDpz2D6fUg=
+
+Name: assets/plugins/images/ic_com_game91_sdk_update_dialog_close.png
+SHA1-Digest: fXu9eakGu/jSNJE7dufoWaMcgSU=
+
+Name: com/feiyou/groupsdk/core/.git/logs/HEAD
+SHA1-Digest: TydaWq301QyJu8jpMAyNBwYGryI=
+
+Name: res/layout/dy_login_with_telephone_activity.xml
+SHA1-Digest: Ad+4Kef7PL7R8QqmTDoGAro6Qt0=
+
+Name: res/drawable-xxhdpi-v4/dy_register_red_tips_bg.png
+SHA1-Digest: OCxf9NyeXwXxZCFBjGr6vdM2BBI=
+
+Name: res/drawable-xxhdpi-v4/dy_pay_checkbox_nor.png
+SHA1-Digest: a3d/tFosSCsOTskS1Ahhzkd0OZE=
+
+Name: res/drawable/dy_white_c_15_bg.xml
+SHA1-Digest: SE70gQ8aXONZHNwO5ahpjBZWQ7E=
+
+Name: assets/plugins/images/ic_com_game91_sdk_splash_image_white.png
+SHA1-Digest: jjJ7xKf5Wd/+Lrdf94MUByFeYZY=
+
+Name: res/drawable/btn_bg.xml
+SHA1-Digest: VxKvcugH4M/w7ztwDDnlt56txoY=
+
+Name: res/drawable/dy_loading_progressbar.xml
+SHA1-Digest: ZGDLPH0NiY5EcQBtS91tHn1QeVY=
+
+Name: classes.dex
+SHA1-Digest: gAYqF0dePMWLN95np1l77VlKTQs=
+
+Name: com/feiyou/groupsdk/core/.git/refs/heads/master
+SHA1-Digest: hI3erQMDEeYwR8qB7eEMJw0JdE0=
+

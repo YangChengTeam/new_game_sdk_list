@@ -5,4 +5,7 @@ tmep/
 publish/
 .history/
 .vscode/
+channels/
+tmep/*
+
 

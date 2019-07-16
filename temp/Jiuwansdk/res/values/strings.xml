@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">jiuhesdk</string>
+    <string name="payment_text">订单支付</string>
+    <string name="order_amount_text">订单金额：</string>
+    <string name="coupon_coin_text">优惠券抵用</string>
+    <string name="platform_coin_text">平台币抵用</string>
+    <string name="alipay_pay_text">支付宝</string>
+    <string name="alipay_recommend_text">(推荐)</string>
+    <string name="wxpay_pay_text">微信支付</string>
+    <string name="pay_result">实付款:</string>
+    <string name="pay_text">立即支付</string>
+</resources>

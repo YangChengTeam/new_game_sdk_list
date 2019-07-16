@@ -231,6 +231,13 @@
     .line 63
     invoke-static {p1}, Lcom/feiyou/groupsdk/core/ChannelInfo;->getChannelInfo(Landroid/app/Activity;)V
 
+    .line 65
+    invoke-static {}, Lcom/duoyou/gamesdk/openapi/DyApiImpl;->getDyApi()Lcom/duoyou/gamesdk/openapi/IDyApi;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lcom/duoyou/gamesdk/openapi/IDyApi;->onCreate(Landroid/app/Activity;)V
+
     .line 68
     invoke-static {}, Lcom/duoyou/gamesdk/openapi/DyApiImpl;->getDyApi()Lcom/duoyou/gamesdk/openapi/IDyApi;
 

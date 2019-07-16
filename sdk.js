@@ -93,44 +93,10 @@ function sign() {
 }
 
 function pretreatment(sdkdir, gamedir) {
-
     var rfileDir = path.join(gameinfo.dir, 'smali', sdkinfo.packageName.replace(new RegExp("\\.", "g"), path.sep))
-    
     if (fs.pathExistsSync(rfileDir)) {
         fs.removeSync(rfileDir)
     }
-
-    ['okhttp3', 'okio', 'com/ipaynow', 'com/UCMobile',
-     'com/unionpay','com/ta', 'com/ut'
-    , 'com/feiyou', 'com/game', 'com/vqs', 
-    'com/squareup', 'com/umeng', 'com/unionpay', 'com/alipay', 'com/alibaba/fastjson',
-    'com/bytedance', 'com/squareup', 'com/UCMobile', 'com/tencent/mm/opensdk', 'com/ss', 
-    'cn/gov/pbc', 'org/apache/commons',
-    'u/aly'].forEach(name=>{
-        var sourcePath = path.join(gamedir, 'smali', name.replace("/", path.sep))
-        if (fs.pathExistsSync(sourcePath)) {
-            fs.removeSync(sourcePath)
-        }
-    });
-
-    ['ipaynow_data.bin', 'kprogresshud_spinner.png'].forEach(name=>{
-        var sourcePath = path.join(gamedir, 'assets', name.replace("/", path.sep))
-        if (fs.pathExistsSync(sourcePath)) {
-            fs.removeSync(sourcePath)
-        }
-    });
-
-    fs.readdirSync(path.join(gamedir, 'lib')).map(dir => {
-        ['libuptsmaddon.so', 'libentryex.so', 
-        'libplugin_phone.so', 'libfyae.so',     
-        'libentryexpro.so'].forEach(name=>{
-            var sourcePath = path.join(gamedir, dir, name)
-            if (fs.pathExistsSync(sourcePath)) {
-                fs.removeSync(sourcePath)
-            }
-        })
-    });
-
 }
 
 
@@ -164,7 +130,6 @@ async function main(callback) {
 
 var dirLevel = 1
 function copy(sdkdir, gamedir) {
-
     fs.readdirSync(sdkdir).map(name => {
         let sdkpath = path.join(sdkdir, name)
         let gamepath = path.join(gamedir, name)
