@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/float_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/dy_float_icon" />
-    <TextView android:background="@drawable/dy_red_c_4_circle_bg" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="3.0dip" android:layout_alignRight="@id/float_icon" />
-</RelativeLayout>

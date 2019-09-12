@@ -7,10 +7,10 @@ function createWindow() {
     // 创建浏览器窗口
     let win = new BrowserWindow({
         title: "聚合渠道打包",
-        width: 800,
-        height: 600,
-        minWidth: 800,
-        minHeight: 600,
+        width: 1000,
+        height: 800,
+        minWidth: 1000,
+        minHeight: 800,
         webPreferences: {
             nodeIntegration: true
         }

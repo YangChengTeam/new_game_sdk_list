@@ -13,12 +13,21 @@
             </div>
         </div>
         <div class="right package">
+            <div>配置文件:<input class="config-file" type="file" /></div>
+            <div class="channels" style="display: none;">
+                <div>渠道名称:<input class="name"  /></div>
+                <div>包名后缀:<input class="package-name" /></div>
+                <div>游戏名称:<input class="app-name" /></div>
+                <div>元数据信息:<textarea class="meta"   style="height: 100px; width: 400px;"></textarea></div>
+                <div>图片替换:<textarea class="extra" style="height: 100px; width: 400px;"></textarea>
+                <div><input type="button" class="hide" value="隐藏" />&nbsp;&nbsp;<input type="button" class="submit" value="修改" /></div>
+            </div></div><br/>
+
             <div class="area">将apk拖拽到此区域</div>
             <div class="start">执行</div>
-            <div class="status">打包状态：</div>
-            <div class="status-info">
+            <div class="status">打包状态：<input type="button" value="清除" class="clear" ></div>
+            <div class="status-info"></div>
 
-            </div>
             <script src="index.js"></script>
         </div>
     </div>
