@@ -6,7 +6,7 @@ publish/
 .history/
 .vscode/
 channels/
-tmep/
+dist/
 *.txt
 
 
