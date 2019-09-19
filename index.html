@@ -8,24 +8,38 @@
     <div class="content">
         <div class="left">
             <div class="header">渠道列表</div>
+            <input type="button" value="全选" class="select-all" />
+            <input type="button" value="全不选" class="un-select-all" />
             <div class="list">
                 
             </div>
         </div>
         <div class="right package">
-            <div>配置文件:<input class="config-file" type="file" /></div>
+            <div>检测:</div>
+            <div><input class="env_check" type="button" value="环境检测"></div>
+            <br/>
+            <div>菜单:</div>
+            <div><input class="open"  type="button" value="打开"/>&nbsp;&nbsp;&nbsp;&nbsp;<input class="setting"  type="button" value="设置"/></div>
+            <br/>
+            <div>配置:</div>
+            <div><input class="config-file" type="file" /></div>
             <div class="channels" style="display: none;">
                 <div>渠道名称:<input class="name"  /></div>
                 <div>包名后缀:<input class="package-name" /></div>
                 <div>游戏名称:<input class="app-name" /></div>
+                <div>签名信息:<input class="keyinfo" /></div>
                 <div>元数据信息:<textarea class="meta"   style="height: 100px; width: 400px;"></textarea></div>
-                <div>图片替换:<textarea class="extra" style="height: 100px; width: 400px;"></textarea>
+                <div>图片替换:<textarea class="extra" style="height: 100px; width: 400px;"></textarea></div><br/>
                 <div><input type="button" class="hide" value="隐藏" />&nbsp;&nbsp;<input type="button" class="submit" value="修改" /></div>
-            </div></div><br/>
+            </div><br/>
 
             <div class="area">将apk拖拽到此区域</div>
             <div class="start">执行</div>
-            <div class="status">打包状态：<input type="button" value="清除" class="clear" ></div>
+           
+
+            <div class="status">打包状态：<input type="button" value="清除" class="clear" >&nbsp;&nbsp;&nbsp;&nbsp;<input class="error"  type="button" value="错误日志"/></div>
+            <br/>
+            
             <div class="status-info"></div>
 
             <script src="index.js"></script>

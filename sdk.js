@@ -7,7 +7,6 @@ const xml2js = require('xml2js')
 const parser = new xml2js.Parser()
 const builder = new xml2js.Builder()
 
-
 // android 常量字符串
 var androidInfo = {
     iconName: "",
@@ -30,18 +29,16 @@ var androidInfo = {
 }
 
 // 设置
-var setting = {
-    java: "java",
-    keyinfo: {
-        path: `.${path.sep}keys${path.sep}game.jks`,
-        alias: "game",
-        password: "123456"
-    },
-    basedir: `.`,
-    tempDir: `.${path.sep}temp${path.sep}`,
-    publishDir: `.${path.sep}publish${path.sep}`,
+var setting = {}
+try {
+    var data = fs.readFileSync(".\\config\\setting.txt", 'utf-8')
+    setting = JSON.parse(data)
+} catch (e) {
+    console.log("配置载入错误->" + e)
+    if (alert) {
+        alert("配置载入错误->" + e)
+    }
 }
-
 
 var sdkinfo = {
     name: "6071",
@@ -86,43 +83,66 @@ async function dsdk(sdkinfo) {
     return await d(sdkinfo.path, sdkinfo.dir)
 }
 
-async function dgame(gameinfo) {
+async function dgame(sdkinfo, gameinfo) {
     var gamepath = gameinfo.path
     gameinfo.name = gamepath.replace(/^.*[\\\/]/, '').split('.apk')[0]
     gameinfo.dir = `${setting.tempDir}${gameinfo.name}`
-
     if (fs.pathExistsSync(gameinfo.dir)) {
-        fs.removeSync(gameinfo.dir)
+        var dir = gameinfo.dir
+        gameinfo.dir = gameinfo.dir + "_" + sdkinfo.name
+        clear(gameinfo)
+        fs.copySync(dir, gameinfo.dir)
+        return
     }
-    return await d(gamepath, gameinfo.dir)
+    await d(gamepath, gameinfo.dir)
+    var dir = gameinfo.dir
+    gameinfo.dir = gameinfo.dir + "_" + sdkinfo.name
+    clear(gameinfo)
+    fs.copySync(dir, gameinfo.dir)
 }
-
-
 
 function sign(sdkinfo, gameinfo) {
     if (!fs.pathExistsSync(setting.publishDir)) {
         fs.mkdirsSync(setting.publishDir)
     }
-    return exec(`jarsigner -verbose -keystore ${setting.keyinfo.path} -signedjar ${setting.publishDir}${gameinfo.name}_${sdkinfo.name}_signed.apk ${setting.tempDir}${gameinfo.name}.apk ${setting.keyinfo.alias} -storepass ${setting.keyinfo.password} > ${setting.tempDir}${gameinfo.name}.log`)
+
+    if (setting.signtype && setting.signtype == "apksigner") {
+        return sign2(sdkinfo, gameinfo)
+    } else {
+        return sign1(sdkinfo, gameinfo)
+    }
+}
+
+function sign1(sdkinfo, gameinfo) {
+    var keyinfo = sdkinfo.keyinfo || setting.keyinfo
+    return exec(`jarsigner -verbose -keystore ${keyinfo.path} -signedjar ${setting.publishDir}${gameinfo.name}_${sdkinfo.name}_signed.apk ${setting.tempDir}${gameinfo.name}_${sdkinfo.name}.apk ${keyinfo.alias} -storepass ${keyinfo.password}>${setting.tempDir}${gameinfo.name}_${sdkinfo.name}.log`)
+}
+
+function sign2(sdkinfo, gameinfo) {
+    var keyinfo = sdkinfo.keyinfo || setting.keyinfo
+    return exec(`${setting.java} -jar build_tools${path.sep}apksigner.jar sign –v1-signing-enabled true -v2-signing-enabled false --ks ${keyinfo.path} --ks-key-alias ${keyinfo.alias} --ks-pass pass:${keyinfo.password} --key-pass pass:${keyinfo.password} --out ${setting.publishDir}${gameinfo.name}_${sdkinfo.name}_signed.apk ${setting.tempDir}${gameinfo.name}_${sdkinfo.name}.apk>${setting.tempDir}${gameinfo.name}_${sdkinfo.name}.log`)
 }
 
 
 function clear(gameinfo) {
     try {
         fs.removeSync(gameinfo.dir)
-        fs.removeSync(`${setting.tempDir}${gameinfo.name}.log`)
-        fs.removeSync(`${setting.tempDir}${gameinfo.name}.apk`)
     } catch (e) {
         console.log(e)
+        fs.appendFileSync(".\\config\\error.txt", e + " \n")
     }
 }
+
+
+
+
 
 async function main(callback) {
     callback("I: 正在打渠道" + sdkinfo.name + "...")
     try {
         await dsdk(sdkinfo)
         callback("I: 渠道sdk已反编绎")
-        await dgame(gameinfo)
+        await dgame(sdkinfo, gameinfo)
         callback("I: 游戏sdk已反编绎")
         sdkdir = sdkinfo.dir
         gamedir = gameinfo.dir
@@ -130,17 +150,25 @@ async function main(callback) {
         await copy(sdkdir, gamedir, sdkinfo, gameinfo)
         replace_extra_file(sdkinfo, gameinfo)
         callback("I: 操作完成，回编中...")
-        await b(gamedir, `${setting.tempDir}${gameinfo.name}.apk`)
+        await b(gamedir, `${setting.tempDir}${gameinfo.name}_${sdkinfo.name}.apk`)
         callback("I: 回编完成，正在签名...")
-        await sign(sdkinfo, gameinfo)
+        sign(sdkinfo, gameinfo).then(()=>{
+            callback("I: 签名完成...")
+            callback(`I: 打包成功->${setting.publishDir}${gameinfo.name}_${sdkinfo.name}_signed.apk`)
+            clear(gameinfo)
+            callback(`end`)
+        }).catch((err)=>{
+            callback(`<font color='red'>I: 签名失败${err}</font>`)
+            clear(gameinfo)
+            callback(`end`)
+        })
     } catch (e) {
-        console.log(e)
+        fs.appendFileSync(".\\config\\error.txt", e + " \n")
+        callback(`<font color='red'>I: 打包失败查看错误日志->${e}</font>`)
+        clear(gameinfo)
+        callback(`end`)
     }
-    callback("I: 正在清理...")
-    clear(gameinfo)
-    if (fs.existsSync(`${setting.publishDir}${gameinfo.name}_${sdkinfo.name}_signed.apk`)) {
-        callback(`I: 打包成功->${setting.publishDir}${gameinfo.name}_${sdkinfo.name}_signed.apk`)
-    }
+    
 }
 
 var dirLevel = 1
@@ -192,6 +220,7 @@ function replace_extra_file(sdkinfo, gameinfo) {
             fs.copySync(item.source, gameinfo.dir + item.dest)
         } catch (e) {
             console.log(e)
+            fs.appendFileSync(".\\config\\error.txt", e + " \n")
         }
     })
 }
@@ -232,7 +261,8 @@ async function mergeAndroidManifestXml(sdkpath, gamepath, sdkinfo, gameinfo) {
             var sdkname = sdkmanifest.application[0].$[androidInfo.androidNameKey]
             if (gamemanifest.application[0].$[androidInfo.androidNameKey]) {
                 var gamename = gamemanifest.application[0].$[androidInfo.androidNameKey]
-                console.log(`手动更新application依赖关系${sdkname}->${gamename}`)
+                console.log(`W: 手动更新application依赖关系${sdkname}->${gamename}`)
+                fs.appendFileSync("..\\config\\error.txt", `W: 手动更新application依赖关系${sdkname}->${gamename}\n`)
             }
             gamemanifest.application[0].$[androidInfo.androidNameKey] = sdkname
         }
@@ -366,6 +396,7 @@ module.exports = {
     setting,
     sdkinfo,
     gameinfo,
-    main
+    main,
+    clear
 }
 

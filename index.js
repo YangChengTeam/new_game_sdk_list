@@ -1,67 +1,12 @@
-﻿const { ipcRenderer } = require('electron')
-const path = require('path')
-const sdk = require('./sdk')
+﻿const { remote, ipcRenderer, shell } = require('electron')
+const exec = require('child-process-promise').exec
+
 const $ = require("jquery")
 
-sdkinfos = [{
-    name: "6071",
-    path: `.${path.sep}channels${path.sep}gsdk.apk`,
-    dir: `.${path.sep}temp${path.sep}gsdk`,
-    meta: [
-        {
-            key: "GROUP_AGENTID",
-            value: "1"
-        }
-    ]
-}, {
-    name: "九玩",
-    packageName: 'jiuwan',
-    path: `.${path.sep}channels${path.sep}Jiuwansdk.apk`,
-    dir: `.${path.sep}temp${path.sep}Jiuwansdk`,
-    meta: [
-        {
-            key: "GROUP_AGENTID",
-            value: "6"
-        }
-    ]
-}, {
-    name: "多游",
-    packageName: 'duoyou',
-    path: `.${path.sep}channels${path.sep}Duoyousdk.apk`,
-    dir: `.${path.sep}temp${path.sep}Duoyousdk`,
-    meta: [
-        {
-            key: "GROUP_AGENTID",
-            value: "40"
-        }
-    ]
-},
-{
-    name: "乐其",
-    packageName: 'leqi',
-    path: `.${path.sep}channels${path.sep}leqi.apk`,
-    dir: `.${path.sep}temp${path.sep}leqi`,
-    meta: [
-        {
-            key: "GROUP_AGENTID",
-            value: "42"
-        }
-    ]
-},
-{
-    name: "遥望",
-    packageName: 'yod',
-    path: `.${path.sep}channels${path.sep}yaowan.apk`,
-    dir: `.${path.sep}temp${path.sep}yaowan`,
-    meta: [
-        {
-            key: "GROUP_AGENTID",
-            value: "41"
-        }
-    ]
-}
-]
-
+var sdkinfos = []
+var packages = []
+var isStarting = false
+var isDragGame = false
 
 $(function () {
     initSdkInfos()
@@ -88,13 +33,14 @@ $(function () {
         console.log(e.originalEvent.dataTransfer.files[0])
         if (files[0].type == 'application/vnd.android.package-archive') {
             $(".area").html(files[0].path)
-            sdk.gameinfo.path = files[0].path
+            ipcRenderer.send("gameinfo", files[0].path)
+            isDragGame = true
         } else {
             alert("请上传apk格式文件")
         }
     })
 
-    var isStarting = false
+    
     $(".start").click(async function () {
 
         if (isStarting) {
@@ -102,33 +48,39 @@ $(function () {
             return
         }
 
-        if (!sdk.gameinfo.path) {
+        if (!isDragGame) {
             alert("请选拖上传一个聚合游戏")
             return
         }
 
-        var isCheckOne = false
-
         for (var i = 0; i < sdkinfos.length; i++) {
-            isStarting = true
             var checked = $(".checkbox").eq(i).prop("checked")
             if (checked) {
-                isCheckOne = true
-                for (key in sdkinfos[i]) {
-                    sdk.sdkinfo[key] = sdkinfos[i][key]
-                }
-                await sdk.main((msg) => {
-                    var html = $(".status-info").html()
-                    $(".status-info").html(html + "<br/>" + msg)
-                })
+                packages.push(sdkinfos[i])
             }
         }
 
-        isStarting = false
-
-        if (!isCheckOne) {
+        if (packages.length == 0) {
             alert("请选择一个渠道")
+        } else {
+            isStarting = true
+            ipcRenderer.send("packages", packages)
         }
+    })
+
+    ipcRenderer.on('msg', (event, msg) => {
+        var html = $(".status-info").html()
+        $(".status-info").html(html + "<br/>" + msg)
+        $(".status-info").animate({
+            scrollTop: $(".status-info").offset().top
+        }, 200);
+    })
+
+    ipcRenderer.on('end', (event, arg) => {
+        isStarting = false
+        delete packages
+        packages = []
+        alert("打包完成")
     })
 
     var index = -1
@@ -155,6 +107,13 @@ $(function () {
         } else {
             $(".meta").val("")
         }
+        if (sdkinfos[index]["keyinfo"]) {
+            $(".keyinfo").val(JSON.stringify(sdkinfos[index]["keyinfo"]))
+            $(".keyinfo").parent().show()
+        } else {
+            $(".keyinfo").val("")
+            $(".keyinfo").parent().hide()
+        }
         $(".channels").show(1000)
     }
 
@@ -168,6 +127,9 @@ $(function () {
                 }
                 if (item["extra"]) {
                     sdkinfos[i]["extra"] = item["extra"]
+                }
+                if (item["keyinfo"]) {
+                    sdkinfos[i]["keyinfo"] = item["keyinfo"]
                 }
                 if (item["meta"]) {
                     item["meta"].forEach(meta => {
@@ -208,6 +170,14 @@ $(function () {
         }
     })
 
+    $(".select-all").click(function(){
+        $(".checkbox").prop("checked", true)
+    })
+
+    $(".un-select-all").click(function(){
+        $(".checkbox").prop("checked", false)
+    })
+
     $(".clear").click(function () {
         $(".status-info").html("")
     })
@@ -215,7 +185,36 @@ $(function () {
     $(".hide").click(function () {
         $(".channels").hide(1000)
     })
+
+    $(".setting").click(function(){
+        shell.showItemInFolder(remote.app.getAppPath().replace("\\resources\\app.asar", "") + "\\config\\setting.txt")
+    })
+
+    $(".open").click(function(){
+        shell.showItemInFolder(remote.app.getAppPath().replace("\\resources\\app.asar", "") + "\\publish\\open.pod")
+    })
+
+    $(".error").click(function(){
+        console.log(remote.app.getAppPath())
+        shell.showItemInFolder(remote.app.getAppPath().replace("\\resources\\app.asar", "") + "\\config\\error.txt")
+    })
+
+    $(".env_check").click(function(){
+          exec("java -version").then(result=>{
+             exec("jarsigner -h").then((result)=>{
+                 alert("环境ok")
+             }).catch(()=>{
+                shell.openExternal('https://pan.baidu.com/s/1fGLBGiAwuJzwZGIGrBnZ1A')
+                alert("未安装java环境, 请到跳转地址下载")
+             })
+          }).catch(err=>{
+             shell.openExternal('https://pan.baidu.com/s/1fGLBGiAwuJzwZGIGrBnZ1A')
+             alert("未安装java环境, 请到跳转地址下载")
+          })
+    })
 })
+
+
 
 function template(name) {
     var template = `<div class="item">
@@ -228,9 +227,15 @@ function template(name) {
 }
 
 function initSdkInfos() {
-    var html = ""
-    sdkinfos.forEach((item, i) => {
-        html += template(i + "." + item.name)
-    });
-    $(".left .list").html(html)
+    var data = require('fs').readFileSync(".\\config\\channels.txt", "utf-8")
+    try {
+        sdkinfos = JSON.parse(data)
+        var html = ""
+        sdkinfos.forEach((item, i) => {
+            html += template(i + "." + item.name)
+        });
+        $(".left .list").html(html)
+    } catch(e){
+        alert("渠道初始化错误->" + e)
+    }
 }
