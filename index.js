@@ -40,7 +40,7 @@ $(function () {
         }
     })
 
-    
+
     $(".start").click(async function () {
 
         if (isStarting) {
@@ -170,11 +170,11 @@ $(function () {
         }
     })
 
-    $(".select-all").click(function(){
+    $(".select-all").click(function () {
         $(".checkbox").prop("checked", true)
     })
 
-    $(".un-select-all").click(function(){
+    $(".un-select-all").click(function () {
         $(".checkbox").prop("checked", false)
     })
 
@@ -186,31 +186,31 @@ $(function () {
         $(".channels").hide(1000)
     })
 
-    $(".setting").click(function(){
+    $(".setting").click(function () {
         shell.showItemInFolder(remote.app.getAppPath().replace("\\resources\\app.asar", "") + "\\config\\setting.txt")
     })
 
-    $(".open").click(function(){
+    $(".open").click(function () {
         shell.showItemInFolder(remote.app.getAppPath().replace("\\resources\\app.asar", "") + "\\publish\\open.pod")
     })
 
-    $(".error").click(function(){
+    $(".error").click(function () {
         console.log(remote.app.getAppPath())
         shell.showItemInFolder(remote.app.getAppPath().replace("\\resources\\app.asar", "") + "\\config\\error.txt")
     })
 
-    $(".env_check").click(function(){
-          exec("java -version").then(result=>{
-             exec("jarsigner -h").then((result)=>{
-                 alert("环境ok")
-             }).catch(()=>{
+    $(".env_check").click(function () {
+        exec("java -version").then(result => {
+            exec("jarsigner -h").then((result) => {
+                alert("环境ok")
+            }).catch(() => {
                 shell.openExternal('https://pan.baidu.com/s/1fGLBGiAwuJzwZGIGrBnZ1A')
                 alert("未安装java环境, 请到跳转地址下载")
-             })
-          }).catch(err=>{
-             shell.openExternal('https://pan.baidu.com/s/1fGLBGiAwuJzwZGIGrBnZ1A')
-             alert("未安装java环境, 请到跳转地址下载")
-          })
+            })
+        }).catch(err => {
+            shell.openExternal('https://pan.baidu.com/s/1fGLBGiAwuJzwZGIGrBnZ1A')
+            alert("未安装java环境, 请到跳转地址下载")
+        })
     })
 })
 
@@ -221,7 +221,7 @@ function template(name) {
     <img class="icon" src="">
     <div class="title">${name}</div>
     <input type="checkbox" class="checkbox" name="sdk"/>
-    <b class="edit" style="font-size:12px;padding-left:70px;">编辑</b>
+    <b class="edit" style="font-size:12px;">编辑</b>
 </div>`
     return template
 }
@@ -235,7 +235,7 @@ function initSdkInfos() {
             html += template(i + "." + item.name)
         });
         $(".left .list").html(html)
-    } catch(e){
+    } catch (e) {
         alert("渠道初始化错误->" + e)
     }
 }

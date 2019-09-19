@@ -152,12 +152,12 @@ async function main(callback) {
         callback("I: 操作完成，回编中...")
         await b(gamedir, `${setting.tempDir}${gameinfo.name}_${sdkinfo.name}.apk`)
         callback("I: 回编完成，正在签名...")
-        sign(sdkinfo, gameinfo).then(()=>{
+        sign(sdkinfo, gameinfo).then(() => {
             callback("I: 签名完成...")
             callback(`I: 打包成功->${setting.publishDir}${gameinfo.name}_${sdkinfo.name}_signed.apk`)
             clear(gameinfo)
             callback(`end`)
-        }).catch((err)=>{
+        }).catch((err) => {
             callback(`<font color='red'>I: 签名失败${err}</font>`)
             clear(gameinfo)
             callback(`end`)
@@ -168,7 +168,7 @@ async function main(callback) {
         clear(gameinfo)
         callback(`end`)
     }
-    
+
 }
 
 var dirLevel = 1
@@ -399,4 +399,3 @@ module.exports = {
     main,
     clear
 }
-

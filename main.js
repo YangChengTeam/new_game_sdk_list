@@ -34,17 +34,13 @@ app.on('window-all-closed', function (event) {
     }
 })
 
-
-
-
-
+app.on('ready', createWindow)
 
 var fork = require('child_process').fork
 
 var gamepath = ""
 var workers = []
 var packagedCount = 0
-var pids = []
 
 ipcMain.on('gameinfo', (event, path) => {
     gamepath = path
@@ -57,7 +53,7 @@ ipcMain.on('packages', (event, packages) => {
     }
 
     workers.forEach((worker, i) => {
-        worker.on('message', function (m) {
+        worker.on('message', (m) => {
             if (m.type == "end") {
                 packagedCount++
                 if (packagedCount == workers.length) {
@@ -66,9 +62,7 @@ ipcMain.on('packages', (event, packages) => {
                     delete workers
                     workers = []
                 }
-            } else if(m.type == "upload-pid"){
-                pids.push(m.value)
-            }else {
+            } else {
                 event.sender.send(m.type, m.value)
             }
         })
@@ -76,8 +70,3 @@ ipcMain.on('packages', (event, packages) => {
     })
 })
 
-
-
-
-
-app.on('ready', createWindow)
