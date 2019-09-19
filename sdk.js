@@ -35,9 +35,6 @@ try {
     setting = JSON.parse(data)
 } catch (e) {
     console.log("配置载入错误->" + e)
-    if (alert) {
-        alert("配置载入错误->" + e)
-    }
 }
 
 var sdkinfo = {
@@ -61,7 +58,6 @@ var gameinfo = {
     name: ""
 }
 
-
 async function d(apkpath, outpath) {
     if (!fs.pathExistsSync(setting.tempDir)) {
         fs.mkdirsSync(setting.tempDir)
@@ -83,10 +79,19 @@ async function dsdk(sdkinfo) {
     return await d(sdkinfo.path, sdkinfo.dir)
 }
 
+async function dgame2(gamepath) {
+    var name = gamepath.replace(/^.*[\\\/]/, '').split('.apk')[0]
+    var dir = `${setting.tempDir}game_${name}`
+    if (fs.pathExistsSync(dir)) {
+        return
+    }
+    await d(gamepath, dir)
+}
+
 async function dgame(sdkinfo, gameinfo) {
     var gamepath = gameinfo.path
     gameinfo.name = gamepath.replace(/^.*[\\\/]/, '').split('.apk')[0]
-    gameinfo.dir = `${setting.tempDir}${gameinfo.name}`
+    gameinfo.dir = `${setting.tempDir}game_${gameinfo.name}`
     if (fs.pathExistsSync(gameinfo.dir)) {
         var dir = gameinfo.dir
         gameinfo.dir = gameinfo.dir + "_" + sdkinfo.name
@@ -94,11 +99,8 @@ async function dgame(sdkinfo, gameinfo) {
         fs.copySync(dir, gameinfo.dir)
         return
     }
+    gameinfo.dir = `game_${setting.tempDir}${gameinfo.name}_${Math.random() * 1000}`
     await d(gamepath, gameinfo.dir)
-    var dir = gameinfo.dir
-    gameinfo.dir = gameinfo.dir + "_" + sdkinfo.name
-    clear(gameinfo)
-    fs.copySync(dir, gameinfo.dir)
 }
 
 function sign(sdkinfo, gameinfo) {
@@ -133,9 +135,18 @@ function clear(gameinfo) {
     }
 }
 
-
-
-
+function delCaches() {
+    fs.readdirSync(`${setting.tempDir}`).map(name => {
+        if (name.indexOf("game_") != -1 || name.indexOf(".apk") != -1 || name.indexOf(".log") != -1 || name.indexOf("_temp") != -1) {
+            try {
+                fs.removeSync(path.join(`${setting.tempDir}`, name))
+            } catch (e) {
+                console.log(e)
+                fs.appendFileSync(".\\config\\error.txt", e + " \n")
+            }
+        }
+    })
+}
 
 async function main(callback) {
     callback("I: 正在打渠道" + sdkinfo.name + "...")
@@ -168,7 +179,6 @@ async function main(callback) {
         clear(gameinfo)
         callback(`end`)
     }
-
 }
 
 var dirLevel = 1
@@ -397,5 +407,6 @@ module.exports = {
     sdkinfo,
     gameinfo,
     main,
-    clear
+    delCaches,
+    dgame2
 }

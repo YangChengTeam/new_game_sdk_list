@@ -1,7 +1,5 @@
 const { app, BrowserWindow, ipcMain, Menu } = require('electron')
-const { Worker, parentPort, isMainThread } = require('worker_threads');
-
-const sdk = require('./sdk')
+const path = require("path")
 
 function createWindow() {
     Menu.setApplicationMenu(null)
@@ -36,19 +34,40 @@ app.on('window-all-closed', function (event) {
 
 app.on('ready', createWindow)
 
+
 var fork = require('child_process').fork
 
 var gamepath = ""
 var workers = []
 var packagedCount = 0
+var worker = fork(`${__dirname}/works.js`)
+var sender
+
+worker.on('message', m => {
+    if (m.type == "caches") {
+        sender.send("caches", "已清除")
+    } else if (m.type == "game_package") {
+        sender.send("game_package", "已编绎")
+    }
+})
 
 ipcMain.on('gameinfo', (event, path) => {
     gamepath = path
+    event.sender.send("msg", "I: 游戏编绎中...")
+    sender = event.sender
+    worker.send({ type: "game_package", value: gamepath })
+
+})
+
+ipcMain.on('caches', (event) => {
+    sender = event.sender
+    event.sender.send("msg", "I: 缓存清除中...")
+    worker.send({ type: "caches", value: "" })
 })
 
 ipcMain.on('packages', (event, packages) => {
     for (var i = 0; i < packages.length; i++) {
-        var worker = fork('./works.js')
+        var worker = fork(`${__dirname}/works.js`)
         workers.push(worker)
     }
 

@@ -7,6 +7,7 @@ var sdkinfos = []
 var packages = []
 var isStarting = false
 var isDragGame = false
+var isDecodeGame = false
 
 $(function () {
     initSdkInfos()
@@ -35,6 +36,7 @@ $(function () {
             $(".area").html(files[0].path)
             ipcRenderer.send("gameinfo", files[0].path)
             isDragGame = true
+            isDecodeGame = true
         } else {
             alert("请上传apk格式文件")
         }
@@ -50,6 +52,11 @@ $(function () {
 
         if (!isDragGame) {
             alert("请选拖上传一个聚合游戏")
+            return
+        }
+
+        if(isDecodeGame){
+            alert("游戏编绎中, 请稍后...")
             return
         }
 
@@ -75,6 +82,26 @@ $(function () {
             scrollTop: $(".status-info").offset().top
         }, 200);
     })
+
+    ipcRenderer.on('game_package', (event, msg) => {
+        isDecodeGame = false
+        var html = $(".status-info").html()
+        $(".status-info").html(html + "<br/>" + "I:" + msg)
+        $(".status-info").animate({
+            scrollTop: $(".status-info").offset().top
+        }, 200);
+        alert(msg)
+    })
+
+    ipcRenderer.on('caches', (event, msg) => {
+        var html = $(".status-info").html()
+        $(".status-info").html(html + "<br/>" + "I:" + msg)
+        $(".status-info").animate({
+            scrollTop: $(".status-info").offset().top
+        }, 200);
+        alert(msg)
+    })
+
 
     ipcRenderer.on('end', (event, arg) => {
         isStarting = false
@@ -211,6 +238,14 @@ $(function () {
             shell.openExternal('https://pan.baidu.com/s/1fGLBGiAwuJzwZGIGrBnZ1A')
             alert("未安装java环境, 请到跳转地址下载")
         })
+    })
+
+    $(".clear2").click(function(){
+        if(isStarting || isDecodeGame){
+            alert("操作中, 请稍后...")
+        } else {
+            ipcRenderer.send("caches", "")
+        }
     })
 })
 
