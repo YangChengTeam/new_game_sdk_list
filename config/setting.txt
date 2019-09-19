@@ -1,0 +1,11 @@
+{
+    "java": "java",
+    "keyinfo": {
+        "path": ".\\keys\\game.jks",
+        "alias": "game",
+        "password": "123456"
+    },
+    "basedir": ".",
+    "tempDir": ".\\temp\\",
+    "publishDir": ".\\publish\\"
+}

@@ -1,0 +1,48 @@
+[{
+		"name": "乐七",
+		"path": ".\\channels\\gsdk.apk",
+		"dir": ".\\temp\\gsdk",
+		"meta": [{
+			"key": "GROUP_AGENTID",
+			"value": "1"
+		}]
+	}, {
+		"name": "九玩",
+		"packageName": "jiuwan",
+		"path": ".\\channels\\Jiuwansdk.apk",
+		"dir": ".\\temp\\Jiuwansdk",
+		"meta": [{
+			"key": "GROUP_AGENTID",
+			"value": "6"
+		}]
+	}, {
+		"name": "多游",
+		"packageName": "duoyou",
+		"path": ".\\channels\\Duoyousdk.apk",
+		"dir": ".\\temp\\Duoyousdk",
+		"meta": [{
+			"key": "GROUP_AGENTID",
+			"value": "40"
+		}]
+	},
+	{
+		"name": "乐其",
+		"packageName": "leqi",
+		"path": ".\\channels\\leqi.apk",
+		"dir": ".\\temp\\leqi",
+		"meta": [{
+			"key": "GROUP_AGENTID",
+			"value": "42"
+		}]
+	},
+	{
+		"name": "遥望",
+		"packageName": "yod",
+		"path": ".\\channels\\yaowan.apk",
+		"dir": ".\\temp\\yaowan",
+		"meta": [{
+			"key": "GROUP_AGENTID",
+			"value": "41"
+		}]
+	}
+]
